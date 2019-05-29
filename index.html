@@ -3,6 +3,7 @@
 
 <head>
 <script>
+    document.addEventListener('load', () => {
 let txChar = undefined;
 
 async function connect() {
@@ -21,7 +22,7 @@ async function connect() {
 
 let button = document.getElementById('button');
 button.addEventListener('click',  () => {connect();} );
-
+    });
 </script>
 </head>
     <body>
